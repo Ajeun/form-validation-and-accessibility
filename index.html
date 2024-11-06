@@ -12,3 +12,7 @@
 <!-- Label Elements -->
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required> 
+
+<!-- Aria Invalid Attribute -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" pattern="[a-zA-Z0-9_]{5,}" placeholder="Enter letters, numbers and underscores only" oninput="validateUsername()" aria-invalid="false">
